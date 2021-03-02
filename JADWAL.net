@@ -1,0 +1,94 @@
+echo -e "\e[92m[\e[91m■\e[92m]\e[92m LOADING JADWAL...\e[92m";
+sleep 2.0
+clear
+echo -e "\e[92m
+╔═══╦═══╦═╗╔═╦═══╦═══╦╗─╔╦═══╦═╗─╔╗
+║╔═╗║╔═╗║║╚╝║║╔═╗╠╗╔╗║║─║║╔═╗║║╚╗║║  ▄▀▀▀▀▀▀▄
+║╚═╝║║─║║╔╗╔╗║║─║║║║║║╚═╝║║─║║╔╗╚╝║ █ ░░▐░░░ █
+║╔╗╔╣╚═╝║║║║║║╚═╝║║║║║╔═╗║╚═╝║║╚╗║║ █ ░░▐▄▄░ █
+║║║╚╣╔═╗║║║║║║╔═╗╠╝╚╝║║─║║╔═╗║║─║║║ █ ░░░░░░ █
+╚╝╚═╩╝─╚╩╝╚╝╚╩╝─╚╩═══╩╝─╚╩╝─╚╩╝─╚═╝  ▀▄▄▄▄▄▄▀\e[92m";
+echo -e "\e[92m╔═══════════════╦═════════════╦═══════════════╗\e[92m";
+date +"║ 🕒Tahun: %Y ║ 🕒Bulan: %m ║ 🕒Tanggal: %d ║"
+echo -e "\e[92m╚═══════════════╩═════════════╩═══════════════╝\e[92m"; 
+echo -e "\e[93m PILIH KOTA ANDA :\e[92m";
+echo -e "\e[92m
+1.kebumen        6.argamakmur         11.bajawa
+2.ambarawa       7.atambua            12.balige
+3.ambon          8.babo               13.balikpapan
+4.amlapura       9.bangan             14.banda aceh
+5.amuntai       10.bahaur,kalteng     15.bandar lampung
+
+16.bandung           21.banten      26.bondowoso
+17.bangkalan         22.batul       27.bengkulu
+18.banjar            23.bekasi      28.cilacap
+19.banjarbaru        24.biak        29.cepu
+20.banjar negara     25.bogor       30.cianjur
+
+31.cibinong     36.depok     41.gombong
+32.cirebon      37.dompu     42.gresik
+33.cimahi       38.enggano   43.gorontalo
+34.demak        39.fakfak    44.indramayu
+35.debpasar     40.garut     45.jakarta barat
+
+46.jakarta pusat     51.jombang     56.yogyakarta
+47.jakarta selatan   52.jember    
+48.jakarta utara     53.kudus       
+49.jakarta timur     54.kuningan    
+50.jepara            55.kupang      
+\e[92m";
+echo -e "JIKA TIDAK ADA KETIK “CARI” OK!!";
+read -p 'NOMOR KOTA ANDA : ' kota;
+#
+if [ "${kota}" = "1" ]
+then
+bash KEBUMEN.sh
+fi
+if [ "${kota}" = "2" ]
+then
+bash AMBARAWA.sh
+fi
+if [ "${kota}" = "3" ]
+then
+bash AMBON.sh
+fi
+if [ "${kota}" = "4" ]
+then
+bash AMLAPURA.sh
+fi
+if [ "${kota}" = "5" ]
+then
+bash AMUNTAI.sh
+fi
+if [ "${kota}" = "6" ]
+then
+bash ARGAMAKMUR.sh
+fi
+if [ "${kota}" = "7" ]
+then
+bash ATAMBUA.sh
+fi
+if [ "${kota}" = "8" ]
+then
+bash BABO.sh
+fi
+if [ "${kota}" = "9" ]
+then
+bash BANGAN.sh
+fi
+if [ "${kota}" = "10" ]
+then
+bash KALTENG.sh
+fi
+if [ "${kota}" = "11" ]
+then
+bash BAJAWA.sh
+fi
+if [ "${kota}" = "12" ]
+then
+bash BALIGE.sh
+fi
+if [ "${kota}" = "$kota" ]
+then
+xdg-open https://www.jadwalsholat.org/adzan/monthly.php?id=4
+fi
